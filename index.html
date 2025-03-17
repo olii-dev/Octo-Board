@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OctoBoard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <header>
+        <h1>OctoBoard - GitHub Activity Dashboard</h1>
+    </header>
+    <main class="container">
+        <div class="input-group">
+            <input type="text" id="username" placeholder="Enter GitHub username" aria-label="GitHub username">
+            <button id="getProfileButton" aria-label="Get Profile">Get Profile</button>
+            <button id="toggleDarkModeButton" aria-label="Toggle Dark Mode">Dark Mode</button>
+        </div>
+        <div id="profile" class="profile"></div>
+        <div id="stats" class="stats"></div>
+        <div id="activity" class="activity"></div>
+        <div id="repos" class="repos"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

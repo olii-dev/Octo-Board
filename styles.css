@@ -1,0 +1,185 @@
+:root {
+    --background-color: #f8f9fa;
+    --text-color: #343a40;
+    --primary-color: #007bff;
+    --card-background-color: #fff;
+    --card-hover-color: #f8f9fa;
+    --dark-background-color: #121212;
+    --dark-text-color: #e0e0e0;
+    --dark-card-background-color: #1e1e1e;
+    --dark-card-hover-color: #2e2e2e;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: var(--dark-background-color);
+    color: var(--dark-text-color);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+
+.input-group {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 12px;
+    font-size: 1rem;
+    width: 250px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: var(--card-background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:focus {
+    outline: none;
+}
+
+.profile, .stats, .activity, .repos {
+    margin-top: 30px;
+    background-color: var(--card-background-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.profile p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.stats h2, .activity h2, .repos h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.stat-card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.stat-card:hover {
+    background-color: var(--card-hover-color);
+}
+
+.activity-card {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.activity-card:hover {
+    background-color: var(--card-hover-color);
+}
+
+.repo-card {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.repo-card:hover {
+    background-color: var(--card-hover-color);
+}
+
+.activity-card a, .repo-card a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.activity-card a:hover, .repo-card a:hover {
+    text-decoration: underline;
+}
+
+.dark-mode input, .dark-mode .profile, .dark-mode .stats, .dark-mode .activity, .dark-mode .repos {
+    background-color: var(--dark-card-background-color);
+    color: var(--dark-text-color);
+}
+
+.dark-mode .stat-card, .dark-mode .activity-card, .dark-mode .repo-card {
+    background-color: var(--dark-card-background-color);
+}
+
+.dark-mode .stat-card:hover, .dark-mode .activity-card:hover, .dark-mode .repo-card:hover {
+    background-color: var(--dark-card-hover-color);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
